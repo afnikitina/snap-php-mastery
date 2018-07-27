@@ -60,4 +60,8 @@ function greetNewStudent (Student $newStudent) : string {
 	return "Dear " .$newStudent->getStudentName() .",\nWelcome to our University!";
 }
 
+// test a function
+
+$newStudent = new Student("Will", 20, true);
+echo greetNewStudent($newStudent);
 
