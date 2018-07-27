@@ -22,11 +22,35 @@ class Student {
 		return($this->studentName);
 	}
 
-	public function setUserName(string $newStudentName)
+	public function setStudentName(string $newStudentName)
 	{
 		// validate and sanitize
 		// if no exceptions have been thrown, assign a new value to student name
 		$this->studentName = $newStudentName;
+	}
+
+	public function getStudentAge() : int
+	{
+		return($this->studentAge);
+	}
+
+	public function setStudentAge(int $newStudentAge)
+	{
+		// validate and sanitize
+		// if no exceptions have been thrown, assign a new value to student name
+		$this->StudentAge = $newStudentAge;
+	}
+
+	public function getStudentPassedClass() : bool
+	{
+		return($this->studentPassedClass);
+	}
+
+	public function setStudentPassedClass(bool $newStudentPassedClass)
+	{
+		// validate and sanitize
+		// if no exceptions have been thrown, assign a new value to student name
+		$this->studentPassedClass = $newStudentPassedClass;
 	}
 
 
