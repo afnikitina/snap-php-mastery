@@ -22,10 +22,19 @@ class Student {
 		return($this->studentName);
 	}
 
+	public function setUserName($newUserName)
+	{
+		// validate and sanitize
+		// if no exceptions have been thrown, assign a new value to user password
+		$this->userName = $newUserName;
+	}
+
+
 	/* all the rest of the class goes here */
 }
 
 function greetNewStudent (Student $newStudent) : string {
 	return "Dear " .$newStudent->getStudentName() .",\nWelcome to our University!";
 }
+
 
