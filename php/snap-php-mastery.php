@@ -25,7 +25,7 @@ class Student {
 	public function setUserName(string $newStudentName)
 	{
 		// validate and sanitize
-		// if no exceptions have been thrown, assign a new value to user password
+		// if no exceptions have been thrown, assign a new value to student name
 		$this->studentName = $newStudentName;
 	}
 
