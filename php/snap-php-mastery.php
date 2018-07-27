@@ -4,13 +4,13 @@ class Student {
 
 	private $studentName;
 	private $studentAge;
-	private $studentBirthdate;
+	private $studentPassedClass;
 
-	public function __construct($newUserId, string $newUserEmail, string $newUserHash, string $newUserName) {
+	public function __construct(string $newStudentName, int $newStudentAge, bool $newStudentPassedClass) {
 		try {
 			$this->setStudentName($newStudentName);
 			$this->setStudentAge($newStudentAge);
-			$this->setStudentBirthdate($StudentBirthdat);
+			$this->setStudentPassedClass($newStudentPassedClass);
 		} catch (\InvalidArgumentException | \RangeException | \TypeError | \Exception $e) {
 			// rethrow uncought by the mutators exceptions
 			throw(new $exceptionType($e->getMessage(), 0, $e));
