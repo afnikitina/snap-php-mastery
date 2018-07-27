@@ -22,7 +22,7 @@ class Student {
 		return($this->studentName);
 	}
 
-	public function setUserName($newStudentName)
+	public function setUserName(string $newStudentName)
 	{
 		// validate and sanitize
 		// if no exceptions have been thrown, assign a new value to user password
