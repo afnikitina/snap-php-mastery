@@ -37,7 +37,7 @@ class Student {
 	public function setStudentAge(int $newStudentAge)
 	{
 		// validate and sanitize
-		// if no exceptions have been thrown, assign a new value to student name
+		// if no exceptions have been thrown, assign a new value to student age
 		$this->StudentAge = $newStudentAge;
 	}
 
@@ -49,10 +49,9 @@ class Student {
 	public function setStudentPassedClass(bool $newStudentPassedClass)
 	{
 		// validate and sanitize
-		// if no exceptions have been thrown, assign a new value to student name
+		// if no exceptions have been thrown, assign a new value to student passed class (true of false)
 		$this->studentPassedClass = $newStudentPassedClass;
 	}
-
 
 	/* all the rest of the class goes here */
 }
